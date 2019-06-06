@@ -1,1 +1,16 @@
 // Mixins in here
+.button-design (@width, @height, @font-size) {
+    border-radius: 15px;
+        background: @button-bg;
+        width: @width;
+        height: @height;
+        color: white;
+        font-size: @font-size;
+}
+.nav-flex (@width, @flow, @align-items, @justify) {
+    width: @width;
+        display: flex;
+        flex-flow: @flow;
+        align-items: @align-items;
+        justify-content: @justify;
+}
