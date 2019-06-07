@@ -1,1 +1,54 @@
 // Navigation Styles here
+.container {
+    @media @mobile {
+        width: 100%;
+    }
+  .nav-container {
+    .nav-flex(100%, row nowrap, center, space-between);
+    padding: 10px 0 24px 0;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+        .nav-flex(100%, column nowrap, center, space-around);
+        padding: 20px 0 5px 0;
+    }
+
+    .navigation-bar {
+        .nav-flex(100%, row nowrap, baseline, space-evenly);
+
+        @media @mobile {
+            .nav-flex(100%, column nowrap, center, space-around);
+        }
+
+      .page-header {
+          width: 57.5%;
+
+          @media @mobile {
+              .nav-flex(100%, row nowrap, center, space-around);
+              font-size: 0.6rem;
+              padding-bottom: 10px;
+          }
+      }
+
+      nav {
+          .nav-flex(42.5%, row nowrap, baseline, space-around);
+
+          @media @mobile {
+              .nav-flex(100%, row nowrap, center, space-around);
+          }
+      }
+    }
+  }
+}
+.navigation-bar nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: grey;
+
+  @media @mobile {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+  }
+}
